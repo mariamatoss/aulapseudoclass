@@ -1,0 +1,18 @@
+  .redirect-link:active {
+    color:chartreuse;  /*quando manter o mause presionado e quando eu visitar o link*/
+}
+
+.redirect-link:visited {
+    color:brown; /*quando eu visitei mudar de cor */
+}
+.input-name:focus { /*quando eu clicar dentro da caixa de seleçao,alatera o estilo, vai mudar a cor de fundo e da letra tambem*/
+    border:1px solid #eaeaea;
+    background-color:aquamarine;
+    color:rgb(160, 46, 46);
+    padding:10px;
+
+ }
+
+ .paragrafo:hover{ /*quando eu passar o mause por cima vai mudar de cor*/
+    background-color: darkgoldenrod;
+ }
