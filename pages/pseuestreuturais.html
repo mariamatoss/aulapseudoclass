@@ -7,8 +7,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <h1>onde vai ser usado:first-child e 
-        :last-child
+        :last-child são primeiro filho, ultimo filho.
     </h1>
+
+    <p> exemplo:quando si tem uma lista e quero altera a lista ,podendo altera o elemento primeiro,o primeiro filho do li vai ser alterado a cor.podendo altera oultimo </p>
+    que ficaria!
+    li:first-child{
+        color:orange;
+    }
+    ou
+
+    li:last-child{
+        color:red;
+    }
+
+    <p> :nth-child()
+        permite a seleçao de qualquer elemento no meio de um grupo,podemos faze tambem tabela zebrada sem ajuda do javascript.
+        exemplo li:nth-child(2n+1){
+            color:greem;
+        }
+    </p>
+
+    <p>:not() conhecido como pseudo-class de negação,ele aceita um argumento-basicamente um outro "seletor"-escrito entre sinais de parênteses.</p>
+    li:not(.meu-item){
+        color:orenge;
+    }
+         <h1>fazendo uma lista</h1>
+      <ul class="lista-frutas">
+        <li>banana</li>
+        <li>maça</li>
+        <li>morango</li>
+        <li>abacaxi</li>
+        <li>melancia</li>
+      </ul>
 </body>
 </html>
