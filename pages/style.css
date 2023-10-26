@@ -1,3 +1,99 @@
-.list-frutas list-style{
-    color:brown
+.lista-frutas li:first-child{
+    color:brown;
+} /*primeiro filho*/
+ 
+
+.lista-frutas li:last-child {
+    color:cornflowerblue;
+}
+/*ultimo filho*/
+
+.lista-frutas li:nth-child(2) {
+ color:blue;
+}
+
+.lista-frutas li:nth-child(4) {
+    color: darkgreen;
+}
+/*usado para qual elemento voce vai modificar*/
+
+       
+/*querendo alterar todos elemetos e menos o do meio ,quer dizer que as cores da fruta vai ser rosa todas ,menos 1uma nao sendo alterada sendo entao preto vai altera.*/
+
+.lista-frutas li:not(.fruta-proibida){
+    color:deeppink;
+}
+
+
+
+
+/*para  as bolinas ficar de outa cor e tambem maior. */
+.lista-frutas li::marker {
+    color:brown;
+    font-size: 30px;
+}
+
+
+
+
+
+/*das caixa*/
+/*caixinha com um marcado chek*/
+.input-checkbox:checked {
+   margin: 10px;
+   accent-color: yellow; /*marca o fundo da cixinha do chek*/
+}
+
+.input-checkedbox:checked + label {
+    background-color: rgb(176, 182, 70);
+}
+
+
+.input-text:disabled {
+    color:lightslategray;/*cor do texto dentro da caixa,lihtgray deixa bem fraquinho a cor do texto*/
+}
+
+
+.input-email:valid {
+    color:cadetblue;
+    background-color:lightgreen;
+    border: 1px solid goldenrod;
+}/*deixa a caixa colorida dento,email */
+
+
+.input-email::placeholder {
+    color:blueviolet;
+}
+
+.texto::first-letter {
+    font-size: 28px;
+    color:green;  /*ele vai altera a cor do texto a primeira letra atraves do pseudo elemeto firstletter*/}
+
+
+   .texto::first-line {
+    font-siza: 28px;
+    color:blue;/*alterar so a primeira linha*/
+ }
+/*alterando a cor da linha intera*/ 
+
+.texto::selection {
+background-color:rgb(255, 192, 246);
+}
+/*alteRA A COR DA CELEÇAO*/
+
+
+
+
+/*caixa do campo de email*/
+.input-email:invalid {
+color:red;
+background-color: lightpink;
+border: 1px solid goldenrod;
+}
+
+
+/*para formulario*/
+.input-required:required {
+    border:1px solid red;
+
 }
